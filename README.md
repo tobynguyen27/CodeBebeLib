@@ -1,11 +1,25 @@
 # CodeBebeLib
 
-A fork of CodeChickenLib
+<img src="./src/main/resources/assets/codebebelib/icon.png" />
 
-# Credits
 
-- [ChickenBones](https://github.com/Chicken-Bones), [covers1624](https://github.com/covers1624) and other [contributors](https://github.com/TheCBProject/CodeChickenLib/graphs/contributors) of CodeChickenLib's for the offical repo.
+> [!WARNING]
+> THIS LIBRARY IS A WORK IN PROGRESS! USE THIS LIBRARY AT YOUR OWN RISK!
 
-# License
+A fork of [CodeChickenLib](https://github.com/TheCBProject/CodeChickenLib) for Fabric.
 
-Licensed under the [LGPL-2.1 license](./LICENSE) license.
+At the moment, this library provides various methods for doing **3D math**, **transformations** and **rendering**.
+
+Basic usage
+---
+
+You can read some examples of using CodeBebeLib with well-explained [here](https://github.com/tobynguyen27/CodeBebeLib/tree/main/src/testmod/java/dev/tobynguyen27/testmod).
+
+Pull requests that add more examples are also welcomed! 
+
+License
+---
+
+CodeBebeLib is licensed under the LGPL-2.1 license. Check [LICENSE](./LICENSE) for further details.
+
+CodeBebeLib is a modified distribution of CodeChickenLib created by [ChickenBones](https://github.com/Chicken-Bones) and [covers1624](https://github.com/covers1624) which licensed under the LGPL-2.1 license.
