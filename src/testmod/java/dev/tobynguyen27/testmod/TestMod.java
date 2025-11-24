@@ -11,7 +11,7 @@ public class TestMod implements ModInitializer {
     @Override
     public void onInitialize() {
         Bebe.initialize();
-        
+
         TestModBlocks.init();
         TestModBlockEntities.init();
     }

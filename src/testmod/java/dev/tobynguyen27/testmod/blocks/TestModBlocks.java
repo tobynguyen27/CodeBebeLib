@@ -10,11 +10,8 @@ import net.minecraft.world.level.block.Block;
 import static dev.tobynguyen27.testmod.TestMod.MOD_ID;
 
 public class TestModBlocks {
-    public static Block CASING = Registry.register(Registry.BLOCK, new ResourceLocation(MOD_ID, "casing"), new CasingBlock());
-    public static Item CASING_BLOCK_ITEM = Registry.register(Registry.ITEM, new ResourceLocation(MOD_ID, "casing"), new BlockItem(CASING, new FabricItemSettings()));
-
-    public static Block ASSEMBLER = Registry.register(Registry.BLOCK, new ResourceLocation(MOD_ID, "assembler"), new AssemblerBlock());
-    public static Item ASSEMBLER_BLOCK_ITEM = Registry.register(Registry.ITEM, new ResourceLocation(MOD_ID, "assembler"), new BlockItem(ASSEMBLER, new FabricItemSettings()));
+    public static Block PEDESTAL = Registry.register(Registry.BLOCK, new ResourceLocation(MOD_ID, "pedestal"), new Pedestal());
+    public static Item PEDESTAL_BLOCK_ITEM = Registry.register(Registry.ITEM, new ResourceLocation(MOD_ID, "pedestal"), new BlockItem(PEDESTAL, new FabricItemSettings()));
 
     public static void init() {}
 }
