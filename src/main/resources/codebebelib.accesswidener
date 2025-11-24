@@ -1,0 +1,86 @@
+accessWidener v2 named
+
+transitive-accessible field com/mojang/math/Matrix4f m00 F
+transitive-accessible field com/mojang/math/Matrix4f m01 F
+transitive-accessible field com/mojang/math/Matrix4f m02 F
+transitive-accessible field com/mojang/math/Matrix4f m03 F
+transitive-accessible field com/mojang/math/Matrix4f m10 F
+transitive-accessible field com/mojang/math/Matrix4f m11 F
+transitive-accessible field com/mojang/math/Matrix4f m12 F
+transitive-accessible field com/mojang/math/Matrix4f m13 F
+transitive-accessible field com/mojang/math/Matrix4f m20 F
+transitive-accessible field com/mojang/math/Matrix4f m21 F
+transitive-accessible field com/mojang/math/Matrix4f m22 F
+transitive-accessible field com/mojang/math/Matrix4f m23 F
+transitive-accessible field com/mojang/math/Matrix4f m30 F
+transitive-accessible field com/mojang/math/Matrix4f m31 F
+transitive-accessible field com/mojang/math/Matrix4f m32 F
+transitive-accessible field com/mojang/math/Matrix4f m33 F
+
+transitive-accessible field com/mojang/math/Matrix3f m00 F
+transitive-accessible field com/mojang/math/Matrix3f m10 F
+transitive-accessible field com/mojang/math/Matrix3f m20 F
+transitive-accessible field com/mojang/math/Matrix3f m01 F
+transitive-accessible field com/mojang/math/Matrix3f m11 F
+transitive-accessible field com/mojang/math/Matrix3f m21 F
+transitive-accessible field com/mojang/math/Matrix3f m02 F
+transitive-accessible field com/mojang/math/Matrix3f m12 F
+transitive-accessible field com/mojang/math/Matrix3f m22 F
+
+mutable field com/mojang/blaze3d/shaders/Uniform intValues Ljava/nio/IntBuffer;
+mutable field com/mojang/blaze3d/shaders/Uniform floatValues Ljava/nio/FloatBuffer;
+
+accessible field com/mojang/blaze3d/shaders/Uniform intValues Ljava/nio/IntBuffer;
+accessible field com/mojang/blaze3d/shaders/Uniform floatValues Ljava/nio/FloatBuffer;
+accessible field net/minecraft/world/item/ArmorMaterials HEALTH_PER_SLOT [I
+accessible field net/minecraft/server/MinecraftServer storageSource Lnet/minecraft/world/level/storage/LevelStorageSource$LevelStorageAccess;
+accessible field net/minecraft/server/players/GameProfileCache profilesByName Ljava/util/Map;
+accessible field net/minecraft/world/phys/shapes/VoxelShape shape Lnet/minecraft/world/phys/shapes/DiscreteVoxelShape;
+accessible field net/minecraft/client/renderer/RenderStateShard POSITION_COLOR_TEX_LIGHTMAP_SHADER Lnet/minecraft/client/renderer/RenderStateShard$ShaderStateShard;
+accessible field net/minecraft/client/renderer/RenderStateShard BLOCK_SHEET Lnet/minecraft/client/renderer/RenderStateShard$TextureStateShard;
+accessible field net/minecraft/client/renderer/RenderStateShard TRANSLUCENT_TRANSPARENCY Lnet/minecraft/client/renderer/RenderStateShard$TransparencyStateShard;
+accessible field net/minecraft/client/renderer/RenderStateShard LIGHTMAP Lnet/minecraft/client/renderer/RenderStateShard$LightmapStateShard;
+accessible field com/mojang/blaze3d/vertex/DefaultedVertexConsumer defaultColorSet Z
+accessible field com/mojang/blaze3d/vertex/BufferBuilder format Lcom/mojang/blaze3d/vertex/VertexFormat;
+accessible field net/minecraft/client/renderer/RenderStateShard BLOCK_SHADER Lnet/minecraft/client/renderer/RenderStateShard$ShaderStateShard;
+accessible field net/minecraft/client/renderer/RenderStateShard NO_TRANSPARENCY Lnet/minecraft/client/renderer/RenderStateShard$TransparencyStateShard;
+accessible field net/minecraft/client/renderer/RenderType sortOnUpload Z
+accessible field net/minecraft/core/Direction BY_3D_DATA [Lnet/minecraft/core/Direction;
+accessible field com/mojang/blaze3d/shaders/Uniform dirty Z
+accessible field net/minecraft/client/renderer/ShaderInstance uniforms Ljava/util/List;
+
+accessible class net/minecraft/server/players/GameProfileCache$GameProfileInfo
+accessible class net/minecraft/client/renderer/RenderStateShard$TextureStateShard
+
+accessible method com/mojang/blaze3d/shaders/Program$Type getGlType ()I
+accessible method com/mojang/blaze3d/shaders/Program <init> (Lcom/mojang/blaze3d/shaders/Program$Type;ILjava/lang/String;)V
+accessible method net/minecraft/world/phys/shapes/VoxelShape getCoords (Lnet/minecraft/core/Direction$Axis;)Lit/unimi/dsi/fastutil/doubles/DoubleList;
+accessible method net/minecraft/world/phys/BlockHitResult <init> (ZLnet/minecraft/world/phys/Vec3;Lnet/minecraft/core/Direction;Lnet/minecraft/core/BlockPos;Z)V
+accessible method net/minecraft/world/phys/shapes/VoxelShape <init> (Lnet/minecraft/world/phys/shapes/DiscreteVoxelShape;)V
+accessible method net/minecraft/client/renderer/RenderType create (Ljava/lang/String;Lcom/mojang/blaze3d/vertex/VertexFormat;Lcom/mojang/blaze3d/vertex/VertexFormat$Mode;ILnet/minecraft/client/renderer/RenderType$CompositeState;)Lnet/minecraft/client/renderer/RenderType$CompositeRenderType;
+
+extendable method com/mojang/blaze3d/shaders/Uniform setSafe (FFFF)V
+extendable method com/mojang/blaze3d/shaders/Uniform setSafe (IIII)V
+extendable method com/mojang/blaze3d/shaders/Uniform set (F)V
+extendable method com/mojang/blaze3d/shaders/Uniform set (FF)V
+extendable method com/mojang/blaze3d/shaders/Uniform set (IF)V
+extendable method com/mojang/blaze3d/shaders/Uniform set (FFF)V
+extendable method com/mojang/blaze3d/shaders/Uniform set (FFFF)V
+extendable method com/mojang/blaze3d/shaders/Uniform set (I)V
+extendable method com/mojang/blaze3d/shaders/Uniform set (II)V
+extendable method com/mojang/blaze3d/shaders/Uniform set (III)V
+extendable method com/mojang/blaze3d/shaders/Uniform set (IIII)V
+extendable method com/mojang/blaze3d/shaders/Uniform set (Lcom/mojang/math/Vector4f;)V
+extendable method com/mojang/blaze3d/shaders/Uniform set (Lcom/mojang/math/Vector3f;)V
+extendable method com/mojang/blaze3d/shaders/Uniform set (Lcom/mojang/math/Matrix4f;)V
+extendable method com/mojang/blaze3d/shaders/Uniform set (Lcom/mojang/math/Matrix3f;)V
+extendable method com/mojang/blaze3d/shaders/Uniform set ([F)V
+extendable method com/mojang/blaze3d/shaders/Uniform setMat2x2 (FFFF)V
+extendable method com/mojang/blaze3d/shaders/Uniform setMat2x3 (FFFFFF)V
+extendable method com/mojang/blaze3d/shaders/Uniform setMat2x4 (FFFFFFFF)V
+extendable method com/mojang/blaze3d/shaders/Uniform setMat3x2 (FFFFFF)V
+extendable method com/mojang/blaze3d/shaders/Uniform setMat3x3 (FFFFFFFFF)V
+extendable method com/mojang/blaze3d/shaders/Uniform setMat3x4 (FFFFFFFFFFFF)V
+extendable method com/mojang/blaze3d/shaders/Uniform setMat4x2 (FFFFFFFF)V
+extendable method com/mojang/blaze3d/shaders/Uniform setMat4x3 (FFFFFFFFFFFF)V
+extendable method com/mojang/blaze3d/shaders/Uniform setMat4x4 (FFFFFFFFFFFFFFFF)V

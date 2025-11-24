@@ -1,0 +1,36 @@
+package dev.tobynguyen27.codebebelib.render;
+
+import com.mojang.blaze3d.systems.RenderSystem;
+import org.lwjgl.opengl.GL;
+import org.lwjgl.opengl.GLCapabilities;
+
+/**
+ * Created by covers1624 on 20/06/2017.
+ */
+@Deprecated(since = "1.18.2", forRemoval = true)
+public class OpenGLUtils {
+
+    public static boolean openGL20;
+    public static boolean openGL21;
+    public static boolean openGL32;
+    public static boolean openGL40;
+    public static boolean openGL43;
+    public static boolean openGL44;
+    public static boolean openGL45;
+    public static boolean openGL46;
+
+    public static void init() {
+        // Let the RenderThread handle this on next frame flip.
+        RenderSystem.recordRenderCall(() -> {
+            GLCapabilities caps = GL.getCapabilities();
+            openGL20 = caps.OpenGL20;
+            openGL21 = caps.OpenGL21;
+            openGL32 = caps.OpenGL32;
+            openGL40 = caps.OpenGL40;
+            openGL43 = caps.OpenGL43;
+            openGL44 = caps.OpenGL44;
+            openGL45 = caps.OpenGL45;
+            openGL46 = caps.OpenGL46;
+        });
+    }
+}
