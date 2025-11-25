@@ -64,7 +64,7 @@ dependencies {
     include modImplementation("net.covers1624:Quack:${project.quack_version}")
     include modImplementation("com.jamieswhiteshirt:reach-entity-attributes:${project.reach_entity_attributes}")
 
-    modRuntimeOnly("com.terraformersmc:modmenu:${project.modmenu_version}") {
+    modLocalRuntime("com.terraformersmc:modmenu:${project.modmenu_version}") {
         exclude group: "net.fabricmc", module: "fabric-loader"
     }
 
