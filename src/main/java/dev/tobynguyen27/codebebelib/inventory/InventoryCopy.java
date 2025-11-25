@@ -1,12 +1,11 @@
 package dev.tobynguyen27.codebebelib.inventory;
 
 import dev.tobynguyen27.codebebelib.utils.ArrayUtils;
+import java.util.Objects;
 import lombok.NonNull;
 import net.minecraft.world.Container;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
-
-import java.util.Objects;
 
 /**
  * Creates a copy of an IInventory for extended simulation
@@ -95,8 +94,7 @@ public class InventoryCopy implements Container {
     }
 
     @Override
-    public void setChanged() {
-    }
+    public void setChanged() {}
 
     @Override
     public boolean canPlaceItem(int i, @NonNull ItemStack itemstack) {
@@ -104,14 +102,11 @@ public class InventoryCopy implements Container {
     }
 
     @Override
-    public void startOpen(@NonNull Player player) {
-    }
+    public void startOpen(@NonNull Player player) {}
 
     @Override
-    public void stopOpen(@NonNull Player player) {
-    }
+    public void stopOpen(@NonNull Player player) {}
 
     @Override
-    public void clearContent() {
-    }
+    public void clearContent() {}
 }

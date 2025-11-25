@@ -16,7 +16,7 @@ public class InventoryRange {
     public WorldlyContainer sidedInv;
     public int[] slots;
 
-    @Deprecated// Use EnumFacing version.
+    @Deprecated // Use EnumFacing version.
     public InventoryRange(Container inv, int side) {
         this(inv, Direction.BY_3D_DATA[side]);
     }

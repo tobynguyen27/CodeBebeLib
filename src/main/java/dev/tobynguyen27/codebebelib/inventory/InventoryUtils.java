@@ -141,7 +141,9 @@ public class InventoryUtils {
             return 0;
         }
 
-        int fit = !base.isEmpty() ? incrStackSize(base, inv.inv.getMaxStackSize() - base.getCount()) : inv.inv.getMaxStackSize();
+        int fit = !base.isEmpty()
+                ? incrStackSize(base, inv.inv.getMaxStackSize() - base.getCount())
+                : inv.inv.getMaxStackSize();
         return Math.min(fit, stack.getCount());
     }
 
@@ -211,11 +213,19 @@ public class InventoryUtils {
             return stack1 == stack2;
         }
 
-        return stack1.getItem() == stack2.getItem() && stack1.getDamageValue() == stack2.getDamageValue() && stack1.getCount() == stack2.getCount() && Objects.equal(stack1.getTag(), stack2.getTag());
+        return stack1.getItem() == stack2.getItem()
+                && stack1.getDamageValue() == stack2.getDamageValue()
+                && stack1.getCount() == stack2.getCount()
+                && Objects.equal(stack1.getTag(), stack2.getTag());
     }
 
     public static boolean canStack(@NonNull ItemStack stack1, @NonNull ItemStack stack2) {
-        return stack1.isEmpty() || stack2.isEmpty() || (stack1.getItem() == stack2.getItem() && (stack2.getDamageValue() == stack1.getDamageValue()) && ItemStack.tagMatches(stack2, stack1)) && stack1.isStackable();
+        return stack1.isEmpty()
+                || stack2.isEmpty()
+                || (stack1.getItem() == stack2.getItem()
+                                && (stack2.getDamageValue() == stack1.getDamageValue())
+                                && ItemStack.tagMatches(stack2, stack1))
+                        && stack1.isStackable();
     }
 
     /**

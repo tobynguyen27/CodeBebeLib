@@ -1,14 +1,13 @@
 package dev.tobynguyen27.codebebelib.inventory;
 
 import dev.tobynguyen27.codebebelib.utils.ArrayUtils;
+import java.util.Arrays;
+import java.util.Objects;
 import lombok.NonNull;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.world.Container;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
-
-import java.util.Arrays;
-import java.util.Objects;
 
 public class InventoryNBT implements Container {
 
@@ -88,12 +87,10 @@ public class InventoryNBT implements Container {
     }
 
     @Override
-    public void startOpen(@NonNull Player player) {
-    }
+    public void startOpen(@NonNull Player player) {}
 
     @Override
-    public void stopOpen(@NonNull Player player) {
-    }
+    public void stopOpen(@NonNull Player player) {}
 
     @Override
     public boolean canPlaceItem(int i, @NonNull ItemStack itemstack) {

@@ -1,13 +1,12 @@
 package dev.tobynguyen27.codebebelib.inventory;
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 import lombok.NonNull;
 import net.minecraft.world.Container;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
-
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
 
 public class MappedInventoryAccess implements Container {
 

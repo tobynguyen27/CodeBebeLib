@@ -1,13 +1,12 @@
 package dev.tobynguyen27.codebebelib.inventory;
 
 import dev.tobynguyen27.codebebelib.utils.ArrayUtils;
+import java.util.Arrays;
+import java.util.Objects;
 import lombok.NonNull;
 import net.minecraft.world.Container;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
-
-import java.util.Arrays;
-import java.util.Objects;
 
 public class InventorySimple implements Container {
 
@@ -100,16 +99,13 @@ public class InventorySimple implements Container {
     }
 
     @Override
-    public void setChanged() {
-    }
+    public void setChanged() {}
 
     @Override
-    public void startOpen(@NonNull Player player) {
-    }
+    public void startOpen(@NonNull Player player) {}
 
     @Override
-    public void stopOpen(@NonNull Player player) {
-    }
+    public void stopOpen(@NonNull Player player) {}
 
     @Override
     public void clearContent() {
