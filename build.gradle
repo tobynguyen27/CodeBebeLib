@@ -9,10 +9,12 @@ plugins {
 }
 
 def ENV = System.getenv()
+def runNumber = ENV.GITHUB_RUN_NUMBER == null ? "9999" : ENV.GITHUB_RUN_NUMBER
+def isRelease = project.hasProperty("release")
+
+version = isRelease ? "${project.mod_version}" : "${project.mod_version}-build.${runNumber}"
 
 group = project.maven_group
-version = project.mod_version
-
 base.archivesName = project.archives_base_name
 
 repositories {
@@ -126,9 +128,17 @@ publishing {
     }
 
     repositories {
-        if (ENV.MAVEN_URL) {
+        if (isRelease) {
             maven {
-                url ENV.MAVEN_URL
+                url "https://maven.tobynguyen.dev/releases"
+                credentials {
+                    username ENV.MAVEN_USERNAME
+                    password ENV.MAVEN_PASSWORD
+                }
+            }
+        } else {
+            maven {
+                url "https://maven.tobynguyen.dev/snapshots"
                 credentials {
                     username ENV.MAVEN_USERNAME
                     password ENV.MAVEN_PASSWORD
