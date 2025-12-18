@@ -1,41 +1,33 @@
 {
-  "schemaVersion": 1,
-  "id": "${mod_id}",
-  "version": "${mod_version}",
+    "schemaVersion": 1,
+    "id": "${mod_id}",
+    "version": "${mod_version}",
 
-  "name": "${mod_name}",
-  "description": "${mod_description}",
-  "authors": [
-    "ChickenBones",
-    "covers1624",
-    "tobynguyen27"
-  ],
-  "contact": {
-    "sources": "https://github.com/tobynguyen27/CodeBebeLib"
-  },
+    "name": "${mod_name}",
+    "description": "${mod_description}",
+    "authors": ["ChickenBones", "covers1624", "tobynguyen27"],
+    "contact": {
+        "sources": "https://github.com/tobynguyen27/CodeBebeLib"
+    },
 
-  "license": "${mod_license}",
-  "icon": "assets/codebebelib/icon.png",
+    "license": "${mod_license}",
+    "icon": "assets/codebebelib/icon.png",
 
-  "environment": "*",
-  "entrypoints": {
-    "main": [
-      "dev.tobynguyen27.codebebelib.CodeBebeLib"
-    ]
-  },
-  "mixins": [
-    "codebebelib.mixins.json"
-  ],
-  "accessWidener": "codebebelib.accesswidener",
-  "depends": {
-    "fabricloader": ">=${loader_version}",
-    "minecraft": "~${minecraft_version}",
-    "java": ">=17",
-    "fabric-api": "*"
-  },
-  "custom": {
-    "modmenu": {
-      "badges": [ "library"]
+    "environment": "*",
+    "entrypoints": {
+        "main": ["dev.tobynguyen27.codebebelib.CodeBebeLib"]
+    },
+    "mixins": ["codebebelib.mixins.json"],
+    "accessWidener": "codebebelib.accesswidener",
+    "depends": {
+        "fabricloader": ">=${loader_version}",
+        "minecraft": "~${minecraft_version}",
+        "java": ">=17",
+        "fabric-api": "*"
+    },
+    "custom": {
+        "modmenu": {
+            "badges": ["library"]
+        }
     }
-  }
 }

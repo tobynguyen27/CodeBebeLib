@@ -8,13 +8,6 @@ import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.phys.shapes.VoxelShape;
 
-/**
- * A VoxelShape implementation, produces a {@link VoxelShapeBlockHitResult} when ray traced.
- * {@link IndexedVoxelShape#data} will be passed through to {@link RayTraceResult#hitInfo} and
- * to {@link RayTraceResult#subHit} if its an integer.
- * <p>
- * Created by covers1624 on 5/12/20.
- */
 public class IndexedVoxelShape extends VoxelShape {
 
     private final VoxelShape parent;

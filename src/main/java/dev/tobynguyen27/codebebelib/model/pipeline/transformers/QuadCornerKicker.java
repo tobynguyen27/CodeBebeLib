@@ -66,9 +66,6 @@ public class QuadCornerKicker extends QuadTransformer {
     /**
      * -- SETTER --
      *  Sets the bitmask of Facades / Covers in the blockspace.
-     *  This is as simple as, mask = (1 << side)
-     *
-     * @param mask The mask.
      */
     @Setter
     private int facadeMask;
