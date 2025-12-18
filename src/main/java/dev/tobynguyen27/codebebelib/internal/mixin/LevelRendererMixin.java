@@ -13,7 +13,7 @@ import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 /**
- * Credit to jozufozu and Flywheel for this mixin <3
+ * Credit to jozufozu and Flywheel for this mixin
  * <p>
  * Created by covers1624 on 1/1/22.
  */
