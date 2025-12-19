@@ -4,7 +4,6 @@ plugins {
     id "io.freefair.lombok" version "9.1.0"
     id "com.diffplug.spotless" version "8.1.0"
     id "idea"
-    id "signing"
     id "maven-publish"
 }
 
@@ -15,7 +14,7 @@ def isRelease = project.hasProperty("release")
 version = isRelease ? "${project.mod_version}" : "${project.mod_version}-build.${runNumber}"
 
 group = project.maven_group
-base.archivesName = project.archives_base_name
+base.archivesName = project.mod_id
 
 repositories {
     mavenCentral()
@@ -120,7 +119,7 @@ publishing {
     publications {
         maven(MavenPublication) {
             groupId = project.group
-            artifactId = project.archives_base_name
+            artifactId = project.mod_id
             version = project.version
 
             from components.java
@@ -147,8 +146,6 @@ publishing {
         }
     }
 }
-
-signing {}
 
 spotless {
     encoding "UTF-8"
