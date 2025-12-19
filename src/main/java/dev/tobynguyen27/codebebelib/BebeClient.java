@@ -2,8 +2,12 @@ package dev.tobynguyen27.codebebelib;
 
 import dev.tobynguyen27.codebebelib.raytracer.VoxelShapeBlockHitResult;
 import dev.tobynguyen27.codebebelib.render.RenderUtils;
+import dev.tobynguyen27.codebebelib.utils.ClientUtils;
+import dev.tobynguyen27.codebebelib.utils.ServerUtils;
 import dev.tobynguyen27.codebebelib.vec.Matrix4;
+import dev.tobynguyen27.codebebelib.world.TileChunkLoadHook;
 import lombok.Getter;
+import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents;
 import net.fabricmc.fabric.api.client.rendering.v1.WorldRenderEvents;
 import net.minecraft.client.Minecraft;
@@ -27,7 +31,12 @@ public class BebeClient {
     private static float renderFrame;
 
     /**
-     * Must be initialized in client-side before using CodeBebeLib
+     * Registers necessary listeners on client-side.
+     * <p>
+     * This function <b>must be invoked</b> before using CodeBebeLib client components.
+     * For example, {@link ClientUtils} is required this function get invoked before using it.
+     * <p>
+     * This function is designed to be invoked in {@link ClientModInitializer} exactly once during the mod lifecycle.
      */
     public static void initialize() {
         ClientTickEvents.START_CLIENT_TICK.register(client -> {
