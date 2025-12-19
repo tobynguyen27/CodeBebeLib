@@ -3,10 +3,7 @@ package dev.tobynguyen27.codebebelib.world;
 import net.minecraft.world.level.chunk.LevelChunk;
 
 /**
- * Provides a callback for tile entities when a chunk is loaded, as an alternative to validate when the chunk hasn't been added to the world.
- * To hook all world join/seperate events. Use this, TileEntity.validate with a worldObj.blockExists check, TileEntity.onChunkUnload and TileEntity.invalidate
- * Be sure to call TileChunkLoadHook.init() from your mod during initialisation
- * You could easily implement this in your own mod, but providing it here reduces the number of times the chunkTileEntityMap needs to be iterated
+ * Provide a callback for block entity when a chunk is loaded
  */
 public interface IChunkLoadTile {
 
