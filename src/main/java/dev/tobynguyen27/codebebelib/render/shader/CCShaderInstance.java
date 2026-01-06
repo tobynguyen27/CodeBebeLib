@@ -69,6 +69,7 @@ public class CCShaderInstance extends ShaderInstance {
         return (CCUniform) super.getUniform(name);
     }
 
+    @Override
     protected void parseUniformNode(JsonElement json) throws ChainedJsonException {
         JsonObject obj = GsonHelper.convertToJsonObject(json, "uniform");
         String name = GsonHelper.getAsString(obj, "name");

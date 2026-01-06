@@ -59,6 +59,7 @@ accessible method net/minecraft/world/phys/BlockHitResult <init> (ZLnet/minecraf
 accessible method net/minecraft/world/phys/shapes/VoxelShape <init> (Lnet/minecraft/world/phys/shapes/DiscreteVoxelShape;)V
 accessible method net/minecraft/client/renderer/RenderType create (Ljava/lang/String;Lcom/mojang/blaze3d/vertex/VertexFormat;Lcom/mojang/blaze3d/vertex/VertexFormat$Mode;ILnet/minecraft/client/renderer/RenderType$CompositeState;)Lnet/minecraft/client/renderer/RenderType$CompositeRenderType;
 
+extendable method net/minecraft/client/renderer/ShaderInstance parseUniformNode (Lcom/google/gson/JsonElement;)V
 extendable method com/mojang/blaze3d/shaders/Uniform setSafe (FFFF)V
 extendable method com/mojang/blaze3d/shaders/Uniform setSafe (IIII)V
 extendable method com/mojang/blaze3d/shaders/Uniform set (F)V
