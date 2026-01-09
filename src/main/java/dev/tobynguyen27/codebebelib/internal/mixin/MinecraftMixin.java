@@ -13,8 +13,8 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 @Mixin(Minecraft.class)
 abstract class MinecraftMixin {
 
-    @Inject(method = "runTick", at = @At(value = "TAIL"))
-    private void onRunTick(boolean p_91384_, CallbackInfo ci) {
+    @Inject(method = "runTick(Z)V", at = @At(value = "TAIL"))
+    private void injectRunTick(boolean renderLevel, CallbackInfo ci) {
         ItemFileRenderer.tick();
     }
 }

@@ -21,17 +21,18 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 public abstract class LevelRendererMixin {
 
     @Inject(
-            method = "renderLevel",
+            method =
+                    "renderLevel(Lcom/mojang/blaze3d/vertex/PoseStack;FJZLnet/minecraft/client/Camera;Lnet/minecraft/client/renderer/GameRenderer;Lnet/minecraft/client/renderer/LightTexture;Lcom/mojang/math/Matrix4f;)V",
             at = @At(value = "INVOKE", ordinal = 1, target = "Lnet/minecraft/client/renderer/PostChain;process(F)V"))
     private void disableTransparencyShaderDepth(
-            PoseStack p1,
-            float p2,
-            long p3,
-            boolean p4,
-            Camera p5,
-            GameRenderer p6,
-            LightTexture p7,
-            Matrix4f p8,
+            PoseStack poseStack,
+            float partialTick,
+            long finishNanoTime,
+            boolean renderBlockOutline,
+            Camera camera,
+            GameRenderer gameRenderer,
+            LightTexture lightTexture,
+            Matrix4f projectionMatrix,
             CallbackInfo ci) {
         GlStateManager._depthMask(false);
     }
