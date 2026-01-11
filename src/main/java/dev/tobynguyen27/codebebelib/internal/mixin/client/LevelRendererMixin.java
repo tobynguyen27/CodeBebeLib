@@ -1,4 +1,4 @@
-package dev.tobynguyen27.codebebelib.internal.mixin;
+package dev.tobynguyen27.codebebelib.internal.mixin.client;
 
 import com.mojang.blaze3d.platform.GlStateManager;
 import com.mojang.blaze3d.vertex.PoseStack;

@@ -1,4 +1,4 @@
-package dev.tobynguyen27.codebebelib.internal.mixin;
+package dev.tobynguyen27.codebebelib.internal.mixin.client;
 
 import static net.covers1624.quack.util.SneakyUtils.unsafeCast;
 

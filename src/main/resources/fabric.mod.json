@@ -17,7 +17,13 @@
     "entrypoints": {
         "main": ["dev.tobynguyen27.codebebelib.CodeBebeLib"]
     },
-    "mixins": ["codebebelib.mixins.json"],
+    "mixins": [
+        "codebebelib.mixins.json",
+        {
+            "config": "codebebelib.client.mixins.json",
+            "environment": "client"
+        }
+    ],
     "accessWidener": "codebebelib.accesswidener",
     "depends": {
         "fabricloader": ">=${loader_version}",

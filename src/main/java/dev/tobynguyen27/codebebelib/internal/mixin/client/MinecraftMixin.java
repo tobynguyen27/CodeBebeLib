@@ -1,4 +1,4 @@
-package dev.tobynguyen27.codebebelib.internal.mixin;
+package dev.tobynguyen27.codebebelib.internal.mixin.client;
 
 import dev.tobynguyen27.codebebelib.internal.ItemFileRenderer;
 import net.minecraft.client.Minecraft;
