@@ -23,14 +23,14 @@ base.archivesName = mod_id
 
 repositories {
     val repositories =
-            setOf(
-                    "https://maven.parchmentmc.org",
-                    "https://maven.terraformersmc.com/",
-                    "https://mvn.devos.one/snapshots/",
-                    "https://maven.jamieswhiteshirt.com/libs-release",
-                    "https://jitpack.io",
-                "https://api.modrinth.com/maven",
-            )
+        setOf(
+            "https://maven.parchmentmc.org",
+            "https://maven.terraformersmc.com/",
+            "https://mvn.devos.one/snapshots/",
+            "https://maven.jamieswhiteshirt.com/libs-release",
+            "https://jitpack.io",
+            "https://api.modrinth.com/maven",
+        )
 
     repositories.forEach { maven { url = uri(it) } }
     mavenCentral()
@@ -76,8 +76,6 @@ dependencies {
 
     modLocalRuntime(libs.modmenu) { exclude(group = "net.fabricmc") }
     modLocalRuntime(libs.lazydfu)
-
-
 }
 
 tasks.withType<ProcessResources>().configureEach {
@@ -110,7 +108,6 @@ java {
 
     withSourcesJar()
 }
-
 
 tasks.named<Jar>("jar") {
     inputs.property("archivesName", project.base.archivesName)
@@ -156,11 +153,22 @@ publishing {
 spotless {
     encoding("UTF-8")
 
+    kotlin {
+        ktfmt().kotlinlangStyle()
+        endWithNewline()
+        toggleOffOn()
+    }
+
+    kotlinGradle {
+        target("*.gradle.kts")
+        ktfmt().kotlinlangStyle()
+    }
+
     java {
         target("src/main/java/**/*.java", "src/test/java/**/*.java")
 
         toggleOffOn()
-
+        importOrder()
         removeUnusedImports("cleanthat-javaparser-unnecessaryimport")
         endWithNewline()
         palantirJavaFormat()
@@ -170,7 +178,9 @@ spotless {
         target("src/*/resources/**/*.json")
         targetExclude("src/generated/resources/**")
 
-        biome("2.3.7").downloadDir( File(rootDir, ".gradle/biome").absolutePath).configPath( File(rootDir, "spotless/biome.json").absolutePath)
+        biome("2.3.7")
+            .downloadDir(File(rootDir, ".gradle/biome").absolutePath)
+            .configPath(File(rootDir, "spotless/biome.json").absolutePath)
 
         endWithNewline()
     }
@@ -183,7 +193,6 @@ spotless {
         endWithNewline()
     }
 }
-
 
 idea {
     module {
