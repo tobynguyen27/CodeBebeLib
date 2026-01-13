@@ -6,7 +6,7 @@
 <h1 align="center">CodeBebeLib</h1>
 
 <p align="center">
-    <a href="https://maven.tobynguyen.dev"><img src="https://maven.tobynguyen.dev/api/badge/latest/snapshots/dev/tobynguyen27/codebebelib?name=Version"></a>
+    <a href="https://maven.tobynguyen.dev"><img src="https://maven.tobynguyen.dev/api/badge/latest/releases/dev/tobynguyen27/codebebelib?name=Version"></a>
     <a href="https://github.com/tobynguyen27/CodeBebeLib/actions/workflows/build-publish.yml"><img src="https://github.com/tobynguyen27/CodeBebeLib/actions/workflows/build-publish.yml/badge.svg"></a>
 </p>
 
