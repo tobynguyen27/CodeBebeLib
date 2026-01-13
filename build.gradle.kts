@@ -74,8 +74,19 @@ dependencies {
     modImplementation(libs.fabric.api)
     modImplementation(libs.fabric.kotlin)
 
+    modImplementation(libs.spotbugs.annotations)
+    modImplementation(libs.portinglib)
+    modImplementation(libs.quack)
+    modImplementation(libs.reachentityattributes)
+    include(libs.spotbugs.annotations)
+    include(libs.portinglib)
+    include(libs.quack)
+    include(libs.reachentityattributes)
+
     modLocalRuntime(libs.modmenu) { exclude(group = "net.fabricmc") }
     modLocalRuntime(libs.lazydfu)
+
+    "testmodImplementation"(sourceSets.main.get().output)
 }
 
 tasks.withType<ProcessResources>().configureEach {

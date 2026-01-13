@@ -26,7 +26,7 @@ fabric-kotlin = { module = "net.fabricmc:fabric-language-kotlin", version.ref = 
 reachentityattributes = { module = "com.jamieswhiteshirt:reach-entity-attributes", version.ref = "reachentityattributes" }
 quack = { module = "net.covers1624:Quack", version.ref = "quack" }
 portinglib = { module = "io.github.fabricators_of_create:Porting-Lib", version.ref = "portinglib" }
-spotbugs = { module = "com.github.spotbugs:spotbugs-annotations", version.ref = "spotbugs-annotations" }
+spotbugs-annotations = { module = "com.github.spotbugs:spotbugs-annotations", version.ref = "spotbugs-annotations" }
 
 modmenu = { module = "com.terraformersmc:modmenu", version.ref = "modmenu" }
 lazydfu = { module = "maven.modrinth:lazydfu", version.ref = "lazydfu" }
